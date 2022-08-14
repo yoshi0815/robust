@@ -1,4 +1,30 @@
-# Sample Program (SCU Protocol)
+# 1.Sample Program (sampleYoshimi.py)  
+
+## About  
+sampleYoshimi.pyの中に記載。  
+## Details  
+sampleYoshimi.pyの中に記載。  
+## How to run  
+
+```sh
+# Run as receier-side
+python3 sampleYoshimi.py s 1**.***.***.*** 8000　（***には受信側のipにすること）
+
+# Run as sender-side
+python3 sampleYoshimi.py c 1**.***.***.*** 8000　（***には受信側のipにすること）
+```
+
+## Performance
+ファイル(data0)のみ送信できる :)
+
+- Taro -> Hanako : `OK = 1, FAILED = 0, DUP = 0`
+- Hanako -> Taro : `OK = 1, FAILED = 0, DUP = 0`
+
+## Hint to improve this protocol
+
+まずはfor文使って複数のファイルを送信できるように変更しましょう。そのあとは分割するサイズを変えてみたり、sleepを入れてみたり、UDPにしたりなどして下さい
+
+# 2.Sample Program (SCU Protocol)
 
 ## About
 
